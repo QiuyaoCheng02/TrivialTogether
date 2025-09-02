@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.user1.com.example.user2.MainActivity">
+
+    <item
+        android:id="@+id/action_reload"
+        android:orderInCategory="100"
+        android:title="reload dataset"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:title="refresh UI"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/noSharing"
+        android:orderInCategory="100"
+        android:title="No Sharing"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/continuousSharing"
+        android:orderInCategory="100"
+        android:title="Continuous Sharing"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/conditionalSharing"
+        android:orderInCategory="100"
+        android:title="Conditional Sharing"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.user1.classes.LargeBitmapView
+        android:id="@+id/largeBitmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.example.user1.classes.arrow.ArrowView
+        android:id="@+id/arrowView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/largeBitmapView"
+        android:layout_alignBottom="@id/largeBitmapView"
+        android:layout_alignStart="@id/largeBitmapView"
+        android:layout_alignEnd="@id/largeBitmapView" />
+    <com.example.user1.classes.arrow.ArrowView_noSharing
+        android:id="@+id/arrowView_noSharing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/largeBitmapView"
+        android:layout_alignBottom="@id/largeBitmapView"
+        android:layout_alignStart="@id/largeBitmapView"
+        android:layout_alignEnd="@id/largeBitmapView" />
+    <com.example.user1.classes.ConditionalView
+        android:id="@+id/conditionalView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/largeBitmapView"
+        android:layout_alignBottom="@id/largeBitmapView"
+        android:layout_alignStart="@id/largeBitmapView"
+        android:layout_alignEnd="@id/largeBitmapView" />
+    <com.example.user1.classes.button.PinButtonView
+        android:id="@+id/pinButtonView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_alignTop="@id/largeBitmapView"
+        android:layout_alignBottom="@id/largeBitmapView"
+        android:layout_alignStart="@id/largeBitmapView"
+        android:background="@android:color/transparent"
+        android:layout_alignEnd="@id/largeBitmapView" />
+    <!-- CardView容器放置在LargeBitmapView的下方 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <!-- ThumbnailView放置在CardView内 -->
+        <com.example.user1.classes.ThumbnailView
+            android:id="@+id/thumbnailView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:padding="0dp"
+            android:scaleType="fitCenter" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
